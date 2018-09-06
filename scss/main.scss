@@ -7,7 +7,7 @@ $letter-spacing: 0px;
 
 /* Green */
 $green: #61D2B4;
-$green-drack: #33b391; 
+$green-dark: #33b391; 
 
 /* Purple */
 $purple: #7f22e9;
@@ -15,7 +15,7 @@ $purple-dark: #5501b6;
 
 //Current Preset Declareation
 $preset: $purple;
-$preset-drack: $purple-dark;
+$preset-dark: $purple-dark;
 
 /*
 * Mate - Bootstrap 4 Template
@@ -198,8 +198,8 @@ a:not([href]):not([tabindex]):hover {
     border-radius: 30px;
     &:hover {
         color: #fff;
-        background: $preset-drack;
-        border-color: $preset-drack;
+        background: $preset-dark;
+        border-color: $preset-dark;
         transition: all .50s ease-in-out;
         -moz-transition: all .50s ease-in-out;
         -webkit-transition: all .50s ease-in-out;
