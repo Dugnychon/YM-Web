@@ -738,10 +738,27 @@ button:focus {
   7. Video promo Style
    ========================================================================== */
 .video-promo {
-  background: #61D2B4;
+  background: #7f22e9;
   color: #fff;
   overflow: hidden;
   position: relative;
+}
+
+.video-promo .social-icons ul li a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: #ddd;
+  font-size: 25px;
+}
+
+.video-promo .social-icons ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video-promo .video-promo-content {
