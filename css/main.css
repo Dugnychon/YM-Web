@@ -1112,6 +1112,11 @@ button:focus {
   color: #fff;
 }
 
+.single-team .social-list .messenger a:hover {
+  background: #0084ff;
+  color: #fff;
+}
+
 .single-team .social-list .twitter a:hover {
   background: #1da1f2;
   color: #fff;
