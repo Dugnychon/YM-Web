@@ -1,22 +1,18 @@
 //All Preset color variables are here
-$primary-font: 'Poppins', sans-serif;
+$primary-font: 'Poppins',
+sans-serif;
 $regular: 400;
 $medium: 500;
 $bold: 700;
-$letter-spacing: 0px; 
-
-/* Green */
-$green: #61D2B4;
-$green-dark: #33b391; 
+$letter-spacing: 0px;
 
 /* Purple */
-$purple: #7f22e9;
-$purple-dark: #5501b6;
 
+$purple: #7840b8;
+$purple-dark: #5501b6;
 //Current Preset Declareation
 $preset: $purple;
 $preset-dark: $purple-dark;
-
 /*
 * Mate - Bootstrap 4 Template
 * Build Date: December 2017
@@ -50,7 +46,6 @@ $preset-dark: $purple-dark;
   13. BLOG SECTION
   14. CONTACT SECTION
   15. FOOTER SECTION
-    -15.1 COMING SOON PAGE
   ------------------------------------- */
 
 /* ==========================================================================
@@ -300,7 +295,6 @@ button:focus {
     background: #8a3ab9;
 }
 
-
 .google-plus a {
     color: #DD4D42
 }
@@ -323,6 +317,14 @@ button:focus {
 
 .linkedin a:hover {
     background: #007BB6
+}
+
+.messenger a {
+    color: #0084ff
+}
+
+.messenger a:hover {
+    background: #0084ff
 }
 
 .pinterest a {
@@ -458,21 +460,23 @@ button:focus {
         background: $preset;
         opacity: 0.9;
     }
+    h1 {
+        color: #fff;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 14px;
+        color: #fff;
+        font-weight: $regular;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
     .contents {
+        
         padding: 200px 0 130px;
-        h1 {
-            color: #fff;
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-        p {
-            font-size: 14px;
-            color: #fff;
-            font-weight: $regular;
-            line-height: 30px;
-            letter-spacing: 0.5px;
-        }
+        
         .btn {
             margin: 25px 25px 0px 0px;
             text-transform: uppercase;
@@ -676,7 +680,7 @@ button:focus {
    ========================================================================== */
 
 #features {
-    background: url(../img/bg1.jpg) fixed no-repeat;
+    background: url(../img/illustration.png) fixed no-repeat;
     background-size: cover;
     color: #fff;
     overflow: hidden;
@@ -752,7 +756,7 @@ button:focus {
    ========================================================================== */
 
 .video-promo {
-    .social-icons ul li a{
+    .social-icons ul li a {
         display: inline-block;
         margin-right: 5px;
         margin-bottom: 15px;
@@ -764,8 +768,8 @@ button:focus {
         background: #ddd;
         font-size: 25px
     }
-    .social-icons ul li a:hover{
-        background-color: rgba(0,0,0,.5);
+    .social-icons ul li a:hover {
+        background-color: rgba(0, 0, 0, .5);
     }
     background: $purple;
     color: #fff;
@@ -1203,7 +1207,7 @@ button:focus {
 .contact-us {
     h3 {
         font-size: 36px;
-        margin-bottom: 45px;
+        margin-bottom: 25px;
     }
     p {
         span {
@@ -1214,6 +1218,7 @@ button:focus {
 }
 
 #contact {
+    padding: 60px 0;
     background: #343a40;
     color: #fff;
     position: relative;
@@ -1254,6 +1259,14 @@ button:focus {
 .list-unstyled {
     li {
         color: #d9534f;
+    }
+}
+
+.partner-block {
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
