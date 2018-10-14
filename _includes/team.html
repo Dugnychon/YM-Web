@@ -1,0 +1,52 @@
+
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Notre Équipe</h2>
+      <hr class="lines">
+      <p class="section-subtitle">Constituée d'étudiants du Groupe Efrei, notre équipe 2018-2019 comporte une
+        quinzaine
+        de membres.
+        <br>Voici le bureau.</p>
+    </div>
+
+    <div class="row">
+      {% for team in site.team %}
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <div class="single-team">
+          <img src="assets/img/team/{{team.img}}" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title">{{ team.nom }}</h4>
+              <p>{{ team.poste }}</p>
+              <ul class="social-list">
+                {% if team.linkedin %}
+                <li class="linkedin">
+                  <a href="https://www.linkedin.com/in/{{ team.linkedin }}/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                {% endif %}
+                {% if team.mail %}
+                <li class="mail">
+                  <a href="mailto:{{ team.mail }}">
+                    <i class="fa fa-at"></i>
+                  </a>
+                </li>
+                {% endif %}
+                {% if team.messenger %}
+                <li class="mail">
+                  <a href="mailto:{{ team.messenger }}">
+                    <i class="fab fa-facebook-messenger"></i>
+                  </a>
+                </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
