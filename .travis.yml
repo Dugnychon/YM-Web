@@ -34,6 +34,8 @@ deploy:
   keep-history: true
   on:
     branch: master
+  target-branch: master
+  local-dir: _site
   repo: YeMistikrik/YeMistikrik.github.io
   email: webmaster@ye-mistikrik.fr
   name: YM Bot
