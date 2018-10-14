@@ -7,4 +7,6 @@ mail: gabriel.dugny@ye-mistikrik.fr
 linkedin: gabriel.dugny
 
 img: gabriel.dugny.jpg
+
+order: 3
 ---

@@ -1,60 +1,64 @@
 <head>
- <!-- Required meta tags -->
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
- <meta name="author" content="{{ site.author }}">
- <meta name="description" content="{{ site.description }}" />
- <meta name="keywords" content="Yé Mistikrik, Efrei, Théâtre, Association, Étudiant">
- <title>{{ site.title }}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="Yé Mistikrik, Efrei, Théâtre, Association, Étudiant">
+  <title>{{ site.title }}</title>
 
- <!-- OpenGraph meta tags -->
- <meta property="og:title" content="Yé Mistikrik? - Association Théâtre de l'Efrei" />
- <meta property="og:description" content="Envie de découvrir le théâtre, l'improvisation, le stand-up? Rejoignez notre association étudiante !" />
- <meta property="og:locale" content="fr_FR" />
- <meta property="og:type" content="website" />
- <meta property="og:image" content="img/Facebook-OpenGraph.png" />
- <!--<meta property="fb:app_id" content="XX" />
+  <!-- OpenGraph meta tags -->
+  <meta property="og:title" content="Yé Mistikrik? - Association Théâtre de l'Efrei" />
+  <meta property="og:description" content="Envie de découvrir le théâtre, l'improvisation, le stand-up? Rejoignez notre association étudiante !" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/Facebook-OpenGraph.png" />
+  <!--<meta property="fb:app_id" content="XX" />
  <meta property="og:url" content="" />
  -->
 
- <meta property="twitter:card" content="summary_large_image" />
- <meta property="twitter:description" content="Envie de découvrir le théâtre, l'improvisation, le stand-up? Rejoignez notre association étudiante !" />
- <meta property="twitter:image" content="img/Facebook-OpenGraph.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:description" content="Envie de découvrir le théâtre, l'improvisation, le stand-up? Rejoignez notre association étudiante !" />
+  <meta property="twitter:image" content="img/Facebook-OpenGraph.png" />
 
 
- <!-- Progressive Web App -->
- <link rel="manifest" href="/manifest.json">
- <meta name="theme-color" content="#7f22e9" />
+  <!-- Progressive Web App -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#7f22e9" />
 
- <!-- Favicon -->
- <link rel="icon" sizes="96x96" href="favicon/favicon-96.png" type="image/png">
- <link rel="icon" sizes="196x196" href="favicon/favicon-196.png" type="image/png">
- <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
- <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
- <meta name="msapplication-TileColor" content="#FFFFFF">
+  <!-- Favicon -->
+  <link rel="icon" sizes="96x96" href="favicon/favicon-96.png" type="image/png">
+  <link rel="icon" sizes="196x196" href="favicon/favicon-196.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+  <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
 
- <!-- FontAwesome Icons -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
-   crossorigin="anonymous">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
-   crossorigin="anonymous">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
 
- <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/line-icons.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
+  {%- if include.css and include.css != "none" -%}
+  {% capture custom_css_path %}/assets/css/{{ include.css }}.css{% endcapture %}
+  <link rel="stylesheet" href="{{ custom_css_path | relative_url }}">
+  {% endif %}
 
   <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 
   {% comment %}
   {%- seo -%}
-  
+
   {%- feed_meta -%}
-  {% endcomment %}  
-  
+  {% endcomment %}
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "fr" }}">
 
+{%- if layout.css or layout.css=='' -%}
+{%- include head.html css=layout.css -%}
+{% else %}
 {%- include head.html -%}
-
+{% endif %}
 <body>
 
   {%- include header.html -%}

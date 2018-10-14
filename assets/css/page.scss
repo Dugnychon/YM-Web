@@ -1,0 +1,93 @@
+--- 
+--- 
+
+@import "presets";
+@import "responsive";
+@import "slicknav.css";
+.indigo {
+    background: #7840B8;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    a {
+        color: #333;
+    }
+}
+
+.top-nav-collapse {
+    background: #fff;
+    z-index: 999999;
+    top: 0px !important;
+    padding: 0;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    .navbar-brand {
+        top: 0px;
+    }
+    background: #fff !important;
+    .navbar-nav .nav-link {
+        color: #333 !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        &:hover {
+            color: $preset !important;
+        }
+    }
+    .navbar-nav .nav-link.active {
+        color: #fff !important;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    border-radius: 30px;
+    background: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active>a,
+.navbar-expand-lg .navbar-nav li a:focus {
+    color: $preset;
+}
+
+.navbar .nav-link.active {
+    color: #fff !important;
+    background: $preset;
+}
+
+.slicknav_btn {
+    border-color: $preset;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    background: $preset;
+}
+
+@media screen and (max-width: 768px) {
+    .slicknav_nav .active a {
+        background: $preset;
+        color: #fff;
+    }
+    .slicknav_nav a:hover,
+    .slicknav_nav .active {
+        color: $preset;
+        background: #f8f9fa;
+    }
+    .slicknav_nav .dropdown li a.active {
+        background: #f8f9fa;
+        color: $preset;
+    }
+}
