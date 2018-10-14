@@ -15,7 +15,7 @@
       {% for team in team_ordered %}
       <div class="col-lg-3 col-md-6 col-xs-12">
         <div class="single-team">
-          <img src="assets/img/team/{{team.img}}" alt="">
+          <img src="assets/img/team/{{team.img}}" alt="{{ team.nom }}">
           <div class="team-details">
             <div class="team-inner">
               <h4 class="team-title">{{ team.nom }}</h4>
@@ -36,7 +36,7 @@
                 </li>
                 {% endif %}
                 {% if team.messenger %}
-                <li class="mail">
+                <li class="messenger">
                   <a href="mailto:{{ team.messenger }}">
                     <i class="fab fa-facebook-messenger"></i>
                   </a>
