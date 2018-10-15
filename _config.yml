@@ -23,7 +23,7 @@ author: "Yé Mistikrik?"
 baseurl: "/YM-Web" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-google.analytics: UA-125319730-1
+google_analytics: UA-125319730-1
 
 collections:
   - team
