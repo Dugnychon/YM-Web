@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Yé Mistikrik ? - Association Théâtre de l'Efrei
-lang: fr_FR
+lang: fr
 email: contact@ye-mistikrik.fr
 description: >- # this means to ignore newlines until "baseurl:"
   Yé Mistikrik? est l'association Théâtre de l'Efrei. 
@@ -59,3 +59,4 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
    - vendor
+   - serve

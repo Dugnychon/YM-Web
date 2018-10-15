@@ -1,0 +1,8 @@
+# Use this configuration for development
+# Any change will override the default config
+# Tell Jekyll to use it:
+#  jekyll serve --config "_config.yml,_config_dev.yml"
+# You can use the serve script
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com

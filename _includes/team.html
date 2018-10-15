@@ -23,21 +23,21 @@
               <ul class="social-list">
                 {% if team.linkedin %}
                 <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/{{ team.linkedin }}/">
+                  <a href="https://www.linkedin.com/in/{{ team.linkedin }}/" rel="noreferrer">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 {% endif %}
                 {% if team.mail %}
                 <li class="mail">
-                  <a href="mailto:{{ team.mail }}">
+                  <a href="mailto:{{ team.mail }}" rel="nofollow noreferrer">
                     <i class="fa fa-at"></i>
                   </a>
                 </li>
                 {% endif %}
                 {% if team.messenger %}
                 <li class="messenger">
-                  <a href="https://m.me/{{ team.messenger }}">
+                  <a href="https://m.me/{{ team.messenger }}" rel="nofollow noreferrer">
                     <i class="fab fa-facebook-messenger"></i>
                   </a>
                 </li>

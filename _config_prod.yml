@@ -1,0 +1,8 @@
+# Use this configuration for specific info for Travis CI (production)
+# Any change will override the default config
+# Tell Jekyll to use it:
+#  jekyll build --config "_config.yml,_config_prod.yml"
+# You can use the cibuild script
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ye-mistikrik.fr" # the base hostname & protocol for your site, e.g. http://example.com
