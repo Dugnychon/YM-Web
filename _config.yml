@@ -60,3 +60,4 @@ exclude:
    - vendor/ruby/
    - vendor
    - serve
+   - README.md
