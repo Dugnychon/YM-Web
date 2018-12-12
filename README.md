@@ -1,4 +1,4 @@
-# Site Yé Mistikrik 2018
+# Site Yé Mistikrik 2018 [![Build Status](https://travis-ci.com/SoFolichon/YM-Web.svg?token=p5pFoFaqAiLRDSEHnrdp&branch=master)](https://travis-ci.com/SoFolichon/YM-Web)
 
 - Basé sur le thème "Mate 1.0.1" par UI Deck
 - Utilise Bootstrap 4
