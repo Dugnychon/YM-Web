@@ -1,6 +1,6 @@
 ---
 nom: Mélissa Brishoual
-poste: Vice-Président
+poste: Vice-Présidente
 
 mail: melissa.brishoual@ye-mistikrik.fr
 

@@ -1,4 +1,11 @@
-# minima
+# Site Yé Mistikrik 2018
+
+- Basé sur le thème "Mate 1.0.1" par UI Deck
+- Utilise Bootstrap 4
+- Utilise Jekyll
+- Déploie sur GIthub Pages avec Travis CI
+
+
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 
