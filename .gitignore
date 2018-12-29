@@ -1,6 +1,26 @@
-_site
-.sass-cache
+# Github's Jekyll.gitignore
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-.vscode
+
+# Mac OS General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Jetbrains IDEA (PyCharm)
 .idea
+
+# Ruby
 Gemfile\.lock
+Gemfile.lock
+.ruby-version
+.ruby-gemset

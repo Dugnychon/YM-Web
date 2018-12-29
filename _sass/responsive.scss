@@ -1,10 +1,10 @@
 /* only small desktops */
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+/* @media (min-width: 992px) and (max-width: 1199px) {} */
 
 /* tablets */
 
-@media (max-width: 991px) {}
+/* @media (max-width: 991px) {} */
 
 /* only small tablets */
 
@@ -77,10 +77,12 @@
     .single-team {
         margin-bottom: 15px;
     }
-    .contact-us, .partner-block {
+    .contact-us,
+    .partner-block {
         margin-bottom: 30px;
     }
-    .contact-us h3, .partner-block h3{
+    .contact-us h3,
+    .partner-block h3 {
         font-size: 28px;
     }
     .footer-links li a {
