@@ -9,19 +9,19 @@ Ce site est édité par l'association *Yé Mistikrik? - Association Théâtre de
 Siège social
 ------------
 
-30, 32 Avenue de la République\
+30, 32 Avenue de la République\\
 94800 Villejuif
 
 Directeur de la publication
 ---------------------------
 
-Inès MHEDDEN, Présidente,\
+Inès MHEDDEN, Présidente\\
 president@ye-mistikrik.fr
 
 Webmaster
 ---------
 
-Gabriel DUGNY, Secrétaire,\
+Gabriel DUGNY, Secrétaire\\
 webmaster@ye-mistikrik.fr
 
 Hébergeur
