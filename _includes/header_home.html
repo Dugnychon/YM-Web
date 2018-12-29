@@ -4,7 +4,7 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a href="index.html" class="navbar-brand">
+        <a href={{ "/" | relative_url }} class="navbar-brand">
           <img class="img-fulid img-logo" src={{ "/assets/img/logo.png" | relative_url }} alt="Yé Mistikrik?">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar"
@@ -14,17 +14,19 @@
       </div>
       <div class="collapse navbar-collapse" id="main-navbar">
         <ul class="navbar-nav mr-auto w-100 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#hero-area">Accueil</a>
-          </li>
+            {% assign current = page.url | downcase %}
 
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#team">Équipe</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll{% if current == '/' %} active{% endif %}" href={{ "/" | relative_url }}>Accueil</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">Contact</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll{% if current == '/about/' %} active{% endif %}" href={{ "/about/" | relative_url }}>Yé Mistikrik ?</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link page-scroll{% if current == '/ym-show/' %} active{% endif %}" href="/ym-show/">Yé Misti'Show</a>
+            </li>
         </ul>
       </div>
     </div>
