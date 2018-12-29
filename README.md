@@ -1,4 +1,4 @@
-# Site Yé Mistikrik 2018 [![Build Status](https://travis-ci.com/Dugnychon/YM-Web.svg?token=p5pFoFaqAiLRDSEHnrdp&branch=master)](https://travis-ci.com/Dugnychon/YM-Web)
+# Site Yé Mistikrik 2018 [![Build Status](https://travis-ci.com/Dugnychon/YM-Web.svg?token=p5pFoFaqAiLRDSEHnrdp&branch=master)](https://travis-ci.com/Dugnychon/YM-Web) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8c3d46f33afb49b2abd4e1eebdddd966)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Dugnychon/YM-Web&amp;utm_campaign=Badge_Grade)
 
 - Basé sur le thème "Mate 1.0.1" par UI Deck
 - Utilise Bootstrap 4
