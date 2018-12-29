@@ -18,13 +18,13 @@
     -2.3 SOCIAL ICON
     -2.4 PRE LOADER
     -2.5 SCROLL TO UP
-  3. HERO AREA 
+  3. HERO AREA
   4. NAVBAR
   5. SERVICES SECTION
   6. FEATURES SECTION
   7. VIDEO PROMO SECTION
   8. PORTFOLIO SECTION
-  9. PRICING TABLE 
+  9. PRICING TABLE
   10. COUNTER SECTION
   11. TESTIMONIAL AREA
   12. TEAM SECTION
@@ -38,6 +38,7 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
 /* ==========================================================================
       2. GENERAL
       ========================================================================== */
@@ -58,11 +59,6 @@ html {
 p {
     font-size: 14px;
     line-height: 26px;
-}
-
-a:hover,
-a:focus {
-    color: $preset;
 }
 
 a {
@@ -95,6 +91,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
+    color: $preset;
 }
 
 a:not([href]):not([tabindex]) {
@@ -151,7 +148,7 @@ a:not([href]):not([tabindex]):hover {
 .btn {
     font-size: 14px;
     padding: 11px 40px;
-    border-radius: 0px;
+    border-radius: 0;
     font-weight: $regular;
     color: #fff;
     text-transform: uppercase;
@@ -180,9 +177,9 @@ a:not([href]):not([tabindex]):hover {
         color: #fff;
         background: $preset-dark;
         border-color: $preset-dark;
-        transition: all .50s ease-in-out;
-        -moz-transition: all .50s ease-in-out;
-        -webkit-transition: all .50s ease-in-out;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
     }
 }
 
@@ -205,7 +202,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .btn-rm {
-    padding: 7px 0px;
+    padding: 7px 0;
     color: #999;
     text-transform: capitalize;
     i {
@@ -257,11 +254,11 @@ button:focus {
 }
 
 .facebook a {
-    color: #4867AA
+    color: #4867aa;
 }
 
 .facebook a:hover {
-    background: #4867AA
+    background: #4867aa;
 }
 
 .twitter a {
@@ -461,7 +458,7 @@ button:focus {
     .contents {
         padding: 200px 0 130px;
         .btn {
-            margin: 25px 0px 0px 0px;
+            margin: 25px 0 0 0;
             text-transform: uppercase;
         }
     }
@@ -487,7 +484,7 @@ button:focus {
 
 .navbar-brand {
     position: relative;
-    padding: 0px;
+    padding: 0;
     .img-logo {
         height: 80px;
     }
@@ -496,9 +493,9 @@ button:focus {
 .top-nav-collapse {
     background: #fff;
     z-index: 999999;
-    top: 0px !important;
+    top: 0 !important;
     padding: 0;
-    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -506,13 +503,13 @@ button:focus {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     .navbar-brand {
-        top: 0px;
+        top: 0;
     }
     background: #fff !important;
     .navbar-nav .nav-link {
         color: #333 !important;
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
         &:hover {
             color: $preset !important;
         }
@@ -621,7 +618,7 @@ button:focus {
 
 .item-boxes {
     text-align: center;
-    padding: 0px 15px;
+    padding: 0 15px;
     margin-bottom: 15px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -801,8 +798,8 @@ button:focus {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background: $preset;
     opacity: 0.9;
     filter: alpha(opacity=90);
@@ -818,7 +815,7 @@ button:focus {
     }
     .portfolio-item {
         .shot-item {
-            margin: 0px;
+            margin: 0;
         }
     }
 }
@@ -829,7 +826,7 @@ button:focus {
 
 .controls {
     text-align: center;
-    padding: 0px 0px 20px;
+    padding: 0 0 20px;
     .active {
         color: $preset !important;
         border-color: $preset;
@@ -914,7 +911,7 @@ button:focus {
        ========================================================================== */
 
 .pricing-table {
-    padding: 0px 0px 40px 0px;
+    padding: 0 0 40px 0;
     margin: 0 auto;
     margin-bottom: 5px;
     border: transparent;
@@ -1052,8 +1049,8 @@ button:focus {
     position: relative;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
     background: $preset;
     overflow: hidden;
     img {
@@ -1068,7 +1065,7 @@ button:focus {
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         transition: 0.5s;
-        border-radius: 0px;
+        border-radius: 0;
         background: #f1f1f1;
         padding: 15px;
         .team-title {
@@ -1138,7 +1135,7 @@ button:focus {
 #blog {
     .blog-item-wrapper {
         background: #fff;
-        border-radius: 0px;
+        border-radius: 0;
         -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
         -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
         transition: transform 0.2s linear, box-shadow 0.2s linear;
@@ -1221,7 +1218,7 @@ button:focus {
     margin-bottom: 10px;
     padding: 14px;
     border-color: #fff;
-    border-radius: 0px;
+    border-radius: 0;
     color: #fff;
     background: transparent;
     font-size: 14px;
