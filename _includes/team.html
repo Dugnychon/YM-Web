@@ -12,11 +12,12 @@
 
     <div class="row">
       {% assign team_ordered = site.team | sort: 'order' %}
-   
+
       {% for team in team_ordered %}
       <div class="col-lg-3 col-md-6 col-xs-12">
         <div class="single-team">
-          <img src="assets/img/team/{{team.img}}" alt="{{ team.nom }}">
+            {% capture team_img %}assets/img/team/{{ team.img }}{% endcapture %}
+          <img src="{{ team_img | relative_url }}" alt="{{ team.nom }}">
           <div class="team-details">
             <div class="team-inner">
               <h4 class="team-title">{{ team.nom }}</h4>

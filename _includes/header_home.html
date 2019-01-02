@@ -21,7 +21,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link page-scroll{% if current == '/about/' %} active{% endif %}" href={{ "/about/" | relative_url }}>Yé Mistikrik ?</a>
+                <a class="nav-link page-scroll{% if current == '/ym/' %} active{% endif %}" href={{ "/ym/" | relative_url }}>Yé Mistikrik ?</a>
             </li>
 
             <li class="nav-item">
@@ -34,13 +34,13 @@
     <!-- Mobile Menu Start -->
     <ul class="mobile-menu">
       <li>
-        <a class="page-scroll" href="#hero-area">Accueil</a>
+          <a class="page-scroll{% if current == '/' %} active{% endif %}" href={{ "/" | relative_url }}>Accueil</a>
       </li>
       <li>
-        <a class="page-scroll" href="#team">Équipe</a>
+          <a class="page-scroll{% if current == '/ym/' %} active{% endif %}" href={{ "/ym/" | relative_url }}>Yé Mistikrik ?</a>
       </li>
       <li>
-        <a class="page-scroll" href="#contact">Contact</a>
+          <a class="page-scroll{% if current == '/ym-show/' %} active{% endif %}" href="/ym-show/">Yé Misti'Show</a>
       </li>
     </ul>
     <!-- Mobile Menu End -->
