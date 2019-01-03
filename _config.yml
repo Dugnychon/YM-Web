@@ -17,7 +17,7 @@ title: Yé Mistikrik ? - Association Théâtre de l'Efrei
 lang: fr
 email: contact@ye-mistikrik.fr
 description: >- # this means to ignore newlines until next item
-  Yé Mistikrik? est l'association Théâtre de l'Efrei. 
+  Yé Mistikrik? est l'association Théâtre de l'Efrei.
   Nous proposons aux étudiants divers évenements liés au théâtre et au stand-up.
 author: "Yé Mistikrik?"
 baseurl: "/YM-Web" # the subpath of your site, e.g. /blog
@@ -27,6 +27,7 @@ google_analytics: UA-125319730-1
 
 collections:
   - team
+  - timeline
 
 # Build settings
 markdown: kramdown
@@ -45,7 +46,7 @@ defaults:
 
 sass:
     style: compressed
-    
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

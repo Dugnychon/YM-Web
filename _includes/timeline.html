@@ -17,50 +17,21 @@
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="timeline-spectacles">
+                    {% assign timeline_ordered = site.timeline | order: 'year' %}
+
+                    {% for timeline in timeline_ordered reversed %}
                     <div class="timeline wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        <a href="#" class="timeline-content">
-                            <span class="year">2018</span>
+                        <a href="{{ timeline.link | relative_url }}" class="timeline-content">
+                            <span class="year">{{ timeline.year }}</span>
                             <div class="inner-content">
-                                <h3 class="title">Yé Misti'Show</h3>
+                                <h3 class="title">{{ timeline.title }}</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor, at <b>Paris, xx</b>
+                                    {{ timeline.description }}
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="timeline wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        <a href="#" class="timeline-content">
-                            <span class="year">2017</span>
-                            <div class="inner-content">
-                                <h3 class="title">Yé Misti'Show</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor, at <b>Paris, xx</b>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="timeline wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        <a href="#" class="timeline-content">
-                            <span class="year">2016</span>
-                            <div class="inner-content">
-                                <h3 class="title">Yé Misti'Show</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor, at <b>Paris, xx</b>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="timeline wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        <a href="#" class="timeline-content">
-                            <span class="year">2015</span>
-                            <div class="inner-content">
-                                <h3 class="title">Yé Misti'Show</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor, at <b>Paris, xx</b>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

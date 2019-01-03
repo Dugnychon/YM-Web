@@ -25,7 +25,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link page-scroll{% if current == '/ym-show/' %} active{% endif %}" href="/ym-show/">Yé Misti'Show</a>
+                <a class="nav-link page-scroll{% if current == '/ym-show/' %} active{% endif %}" href={{ "/ym-show/" | relative_url }}>Yé Misti'Show</a>
             </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
           <a class="page-scroll{% if current == '/ym/' %} active{% endif %}" href={{ "/ym/" | relative_url }}>Yé Mistikrik ?</a>
       </li>
       <li>
-          <a class="page-scroll{% if current == '/ym-show/' %} active{% endif %}" href="/ym-show/">Yé Misti'Show</a>
+          <a class="page-scroll{% if current == '/ym-show/' %} active{% endif %}" href={{ "/ym-show/" | relative_url }}>Yé Misti'Show</a>
       </li>
     </ul>
     <!-- Mobile Menu End -->
