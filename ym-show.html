@@ -5,6 +5,29 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci 
 permalink: /ym-show/
 ---
 
+<div class="container">
+    <div class="row">
+        {% for show in site.show %}
+        <div class="col-lg-3 col-md-6 col-xs-12">
+            {% assign currentDate = site.time %}
+            <div class="single-team {% if currentDate > show.date_event %} disabled {% endif %}">
+                {% capture cover_img %}assets/img/covers/{{ show.cover }}{% endcapture %}
+                <img src="{{ cover_img | relative_url }}" alt="{{ show.title }}" />
+
+                <div class="team-details">
+                    <div class="team-inner">
+                        <h4 class="team-title">{{ show.title }}</h4>
+                        <p>{{ show.description }}</p>
+                        <a target="_blank" href="{{ show.url | relative_url }}" class="btn btn-common wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms;">Plus d'informations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br />
+</div>
+
 
 
 <!--<iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/ye-mistikrik-association-theatre-de-l-efrei/evenements/ye-misti-show/widget"

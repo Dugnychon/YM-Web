@@ -365,3 +365,9 @@ h6{
         }
     }
 }
+
+.single-team {
+    &.disabled {
+        opacity: 0.5;
+    }
+}
