@@ -218,6 +218,41 @@ h6{
         &:first-child, &:last-child:nth-child(even) {
             margin: 0;
         }
+
+        &.small-timeline {
+            .timeline-content {
+                min-height: 120px;
+
+                &:before {
+                    width: 160px;
+                }
+            }
+
+            min-height: 120px;
+
+            &:nth-child(2n) .year {
+                left: auto;
+                right: 70px;
+            }
+
+            .year {
+                width: 60px;
+                height: 60px;
+                line-height: 50px;
+                border-width: 5px;
+                font-size: 12px;
+
+                left: 70px;
+
+                &:before {
+                    border-left-width: 10px;
+                    border-top-width: 5px;
+                    border-bottom-width: 5px;
+
+                    bottom: -6px;
+                }
+            }
+        }
     }
 
     .timeline-content {
