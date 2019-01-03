@@ -187,6 +187,12 @@ a:not([href]):not([tabindex]):hover {
     }
 }
 
+.btn-invert {
+    background-color: #fff;
+    border-color: #fff;
+    color: $preset;
+}
+
 .btn-border {
     color: #fff;
     background-color: transparent;
