@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_container
 title: Mentions Légales
 permalink: /mentions-legales/
 ---

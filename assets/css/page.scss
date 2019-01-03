@@ -159,6 +159,7 @@ h6{
 
     .timeline {
         width: 50%;
+        min-height: 130px;
         padding-left: 100px;
         float: right;
         position: relative;
@@ -279,6 +280,10 @@ h6{
     }
 
     @media only screen and (max-width:1200px) {
+        .timeline {
+            min-height: auto;
+        }
+
         .year {
             top: 50%;
             transform: translateY(-50%);

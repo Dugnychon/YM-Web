@@ -7,7 +7,8 @@ permalink: /ym-show/
 
 <div class="container">
     <div class="row">
-        {% for show in site.show %}
+        {% assign shows = (site.show | sort: 'date') | reverse %}
+        {% for show in shows %}
         <div class="col-lg-3 col-md-6 col-xs-12">
             {% assign currentDate = site.time %}
             <div class="single-team {% if currentDate > show.date_event %} disabled {% endif %}">
