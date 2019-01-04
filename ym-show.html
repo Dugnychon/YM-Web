@@ -7,7 +7,7 @@ permalink: /ym-show/
 
 <div class="container">
     <div class="row">
-        {% assign shows = (site.show | sort: 'date') | reverse %}
+        {% assign shows = site.show | sort: 'date' | reverse %}
         {% for show in shows %}
         <div class="col-lg-3 col-md-6 col-xs-12">
             {% assign currentDate = site.time %}
