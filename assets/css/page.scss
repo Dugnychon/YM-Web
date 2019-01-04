@@ -233,6 +233,10 @@ h6{
             &:nth-child(2n) .year {
                 left: auto;
                 right: 70px;
+
+                &:before {
+                    border-right-width: 10px;
+                }
             }
 
             .year {
