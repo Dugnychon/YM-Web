@@ -4,14 +4,15 @@
             <div class="col-lg-8">
                 <div class="video-promo-content text-center">
                     <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        Notre prochain spectacle
+                        Prochain événement
                     </h2>
                     {% assign shows = (site.show | sort: 'date') | reverse %}
                     {% for show in shows limit:1 %}
                     {% capture cover_img %}assets/img/covers/{{ show.cover }}{% endcapture %}
                     <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        <img class="img-fluid d-block" src="{{ cover_img | relative_url }}" alt="{{ show.description }}" /><br /><br />
-                        <a href="{{ show.url | relative_url }}" class="btn btn-common btn-invert wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">{{ show.title }}</a>
+                        <a href="{{ show.url | relative_url }}"><img class="img-fluid d-block" src="{{ cover_img | relative_url }}" alt="{{ show.description }}" /></a>
+                        <h3>{{ show.title }} - {{ show.date_event | date: "%d/%m/%Y %R"  }}</h3>
+                        <a href="{{ show.url | relative_url }}" class="btn btn-common btn-invert wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">En savoir plus</a>
                     </p>
                     {% endfor %}
                 </div>
