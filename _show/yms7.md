@@ -3,6 +3,8 @@ layout: show
 title: "Yé Mist'Inter'Show !"
 description: Le septième ? Oui, mais le premier en anglais !
 
+number: 7
+
 slug: yms-7-inter
 cover: yms7.png
 
@@ -11,7 +13,7 @@ location: EFREI Paris, 30-32 Avenue de la République, 94800 Villejuif
 
 description_long: In English please ! Pour accueillir comme il se doit les étudiants étrangers d'iWeek et d'Efrei International, nous avons fait appel à des artistes anglophones, pour notre plus grand plaisir !
 
-
+enable_artists: false
 
 artists:
     - name: Test 1

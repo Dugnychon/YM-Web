@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Yé Misti'Show
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut consectetur, cumque esse eum id itaque minima odit perspiciatis praesentium quasi quisquam, voluptas? Esse excepturi nulla porro quis veritatis.
+description: Lors des Yé Misti'Show, humoristes confirmés et humoristes de l'Efrei se succèdent pour vous faire rire !
 permalink: /ym-show/
 ---
 
 <div class="container">
     <div class="row">
-        {% assign shows = site.show | sort: 'date' | reverse %}
+        {% assign shows = site.show | sort: 'number' | reverse %}
         {% for show in shows %}
         <div class="col-lg-3 col-md-6 col-xs-12">
             {% assign currentDate = site.time %}
@@ -19,7 +19,7 @@ permalink: /ym-show/
                     <div class="team-inner">
                         <h4 class="team-title">{{ show.title }}</h4>
                         <p>{{ show.description }}</p>
-                        <a target="_blank" href="{{ show.url | relative_url }}" class="btn btn-common wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms;">Plus d'informations</a>
+                        <a href="{{ show.url | relative_url }}" class="btn btn-common wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms;">Plus d'informations</a>
                     </div>
                 </div>
             </div>

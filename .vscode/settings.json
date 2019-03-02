@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "__error": "Not found",
+    "**/.sass-cache": true,
+    "**/.sass-cache.*": true,
+    "*_site": true,
+    "*_site.*": true
+  }
+}

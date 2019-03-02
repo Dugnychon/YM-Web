@@ -52,6 +52,7 @@ css: page
 
                         <br />
 
+                        {% if page.enable_artists %}
                         <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
                             Artistes
                         </h3>
@@ -90,6 +91,7 @@ css: page
                                 {% endfor %}
                             </div>
                         </div>
+                        {% endif %}
 
                         <br />
                     </div>

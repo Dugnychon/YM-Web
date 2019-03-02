@@ -6,7 +6,7 @@
                     <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">
                         Prochain événement
                     </h2>
-                    {% assign shows = (site.show | sort: 'date') | reverse %}
+                    {% assign shows = (site.show | sort: 'number') | reverse %}
                     {% for show in shows limit:1 %}
                     {% capture cover_img %}assets/img/covers/{{ show.cover }}{% endcapture %}
                     <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">
