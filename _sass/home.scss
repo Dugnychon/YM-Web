@@ -115,6 +115,7 @@ a:not([href]):not([tabindex]):hover {
     color: #fff;
     margin-bottom: 40px;
     text-align: center;
+
     .section-title {
         font-size: 42px;
         margin-top: 0;
@@ -138,6 +139,9 @@ a:not([href]):not([tabindex]):hover {
         position: relative;
         border-top: 2px solid $preset;
         margin-top: 15px;
+    }
+    &.solo {
+        margin-bottom: 0;
     }
 }
 
@@ -181,6 +185,12 @@ a:not([href]):not([tabindex]):hover {
         -moz-transition: all .5s ease-in-out;
         -webkit-transition: all .5s ease-in-out;
     }
+}
+
+.btn-invert {
+    background-color: #fff;
+    border-color: #fff;
+    color: $preset;
 }
 
 .btn-border {
@@ -396,8 +406,8 @@ button:focus {
     }
 }
 
-/* ========================================================================== 
-     -2.5 Scroll To Up 
+/* ==========================================================================
+     -2.5 Scroll To Up
       ========================================================================== */
 
 .back-to-top {
@@ -772,6 +782,9 @@ button:focus {
             text-transform: uppercase;
             margin-bottom: 30px;
         }
+        h3 {
+            font-size: 25px;
+        }
         p {
             margin-bottom: 30px;
         }
@@ -1129,7 +1142,7 @@ button:focus {
 }
 
 /* ==========================================================================
-     13. Blog 
+     13. Blog
       ========================================================================== */
 
 #blog {
@@ -1252,6 +1265,11 @@ button:focus {
 }
 
 .partner-block {
+
+    .wrapper-img {
+        text-align: center;
+    }
+
     img {
         bottom: 0;
         right: 0;

@@ -3,16 +3,24 @@ layout: default
 css: page
 ---
 
-<div class="container">
+<div class="margin-navbar">
   <article class="post">
 
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title | escape }}</h1>
-    </header>
+      <div class="row justify-content-md-center contents text-center">
+          <div class="col-md-10">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                  {{ page.title | escape }}
+              </h1>
+          </div>
+          <div class="col-md-7">
+              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+                  {{ page.description | escape }}
+              </p>
+          </div>
+      </div>
 
-    <div class="post-content">
-      {{ content }}
-    </div>
-
+      <div class="post-content">
+          {{ content }}
+      </div>
   </article>
 </div>

@@ -1,8 +1,36 @@
 ---
 layout: page
-title: Yé Misti'Show - 23/01/2019
+title: Yé Misti'Show
+description: Lors des Yé Misti'Show, humoristes confirmés et humoristes de l'Efrei se succèdent pour vous faire rire !
 permalink: /ym-show/
 ---
-<iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/ye-mistikrik-association-theatre-de-l-efrei/evenements/ye-misti-show/widget"
+
+<div class="container">
+    <div class="row">
+        {% assign shows = site.show | sort: 'number' | reverse %}
+        {% for show in shows %}
+        <div class="col-lg-3 col-md-6 col-xs-12">
+            {% assign currentDate = site.time %}
+            <div class="single-team {% if currentDate > show.date_event %} disabled {% endif %}">
+                {% capture cover_img %}assets/img/covers/{{ show.cover }}{% endcapture %}
+                <img src="{{ cover_img | relative_url }}" alt="{{ show.title }}" />
+
+                <div class="team-details">
+                    <div class="team-inner">
+                        <h4 class="team-title">{{ show.title }}</h4>
+                        <p>{{ show.description }}</p>
+                        <a href="{{ show.url | relative_url }}" class="btn btn-common wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms;">Plus d'informations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br />
+</div>
+
+
+
+<!--<iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/ye-mistikrik-association-theatre-de-l-efrei/evenements/ye-misti-show/widget"
     style="width:100%;min-height:950px;height:auto;border:none;padding-top:10px;"></iframe>
-<div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
+<div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>-->

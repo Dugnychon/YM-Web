@@ -1,0 +1,119 @@
+---
+layout: default
+css: page
+---
+
+<div class="margin-navbar">
+    <article class="post">
+
+        <div class="row justify-content-md-center contents text-center">
+            <div class="col-md-10">
+                <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {{ page.title | escape }}
+                </h1>
+            </div>
+            <div class="col-md-7">
+                <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    {{ page.description | escape }}
+                </p>
+            </div>
+        </div>
+
+        <div class="post-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            Informations
+                        </h2>
+
+                        <div class="description wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            {{ page.description_long }}
+                        </div> <br /><br />
+
+                        <div class="location wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            <b>Lieu:</b> {{ page.location }}<br />
+                            {% assign m = page.date_event | date: "%-m" %}
+                            <b>Date:</b> {{ page.date_event | date: '%d' }} {% case m %}
+                                {% when '1' %}Janvier
+                                {% when '2' %}Février
+                                {% when '3' %}Mars
+                                {% when '4' %}Avril
+                                {% when '5' %}Mai
+                                {% when '6' %}Juin
+                                {% when '7' %}Juillet
+                                {% when '8' %}Août
+                                {% when '9' %}Septembre
+                                {% when '10' %}Octobre
+                                {% when '11' %}Novembre
+                                {% when '12' %}Décembre
+                            {% endcase %}{{ page.date_event | date: '  %Y à %H:%M' }}
+                        </div>
+
+                        <br />
+
+                        {% if page.enable_artists %}
+                        <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            Artistes
+                        </h3>
+
+                        <div class="artists wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            <div class="row">
+                                {% for artist in page.artists %}
+                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                    <div class="single-team">
+                                        {% capture artist_img %}assets/img/artists/{{ artist.img }}{% endcapture %}
+                                        <img src="{{ artist_img | relative_url }}" alt="{{ artist.name }}" />
+                                        <div class="team-details">
+                                            <div class="team-inner">
+                                                <h4 class="team-title">{{ artist.name }}</h4>
+                                                <p>{{ artist.description }}</p>
+                                                <ul class="social-list">
+                                                    {% if artist.twitter %}
+                                                    <li class="twitter">
+                                                        <a href="{{ artist.twitter }}" rel="noreferrer">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    {% endif %}
+                                                    {% if artist.facebook %}
+                                                    <li class="facebook">
+                                                        <a href="{{ artist.facebook }}" rel="noreferrer">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <br />
+                    </div>
+                    <div class="col-md-5">
+                        <h2 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            Réservations
+                        </h2>
+
+                        {% assign currentDate = site.time %}
+                        {% if currentDate <= page.date_event  %}
+                        <div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/ye-mistikrik-association-theatre-de-l-efrei/evenements/ye-misti-show/widget" style="width:100%;min-height:950px;height:auto;border:none;padding-top:10px;"></iframe>
+                        </div>
+                        <div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
+                        {% else %}
+                        <p class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            Désolé cet événement est passé.
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
