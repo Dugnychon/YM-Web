@@ -20,7 +20,8 @@ description: >- # this means to ignore newlines until next item
   Yé Mistikrik? est l'association Théâtre de l'Efrei.
   Nous proposons aux étudiants divers évenements liés au théâtre et au stand-up.
 author: "Yé Mistikrik?"
-baseurl: "/YM-Web" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
+# baseurl: "/YM-Web" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 google_analytics: UA-125319730-1
