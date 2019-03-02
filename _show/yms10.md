@@ -19,8 +19,6 @@ artists:
     - name: Sabri M'Barki
       description: Présentateur fétiche
       img: sabri.jpg
-      twitter: twitter.com/test1
-      facebook: facebook.com/test1
     - name: Live Efrei
       description: Toujours à la musique !
       img: live.jpg
