@@ -1,6 +1,7 @@
+os: linux
 language: ruby
 rvm:
-  - 2.4.1
+  - 2.5
 
 before_script:
  - chmod +x ./script/cibuild # or do this locally and commit
@@ -18,8 +19,6 @@ addons:
     packages:
     - libcurl4-openssl-dev
 
-sudo: false # route your build to the container-based infrastructure for a faster build
-
 cache: bundler # caching bundler gem packages will speed up build
 
 # Optional: disable email notifications about the outcome of your builds
@@ -29,13 +28,13 @@ notifications:
 
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
   on:
     branch: master
-  target-branch: master
-  local-dir: _site
+  target_branch: master
+  local_dir: _site
   repo: YeMistikrik/YeMistikrik.github.io
   email: webmaster@ye-mistikrik.fr
   name: YM Bot

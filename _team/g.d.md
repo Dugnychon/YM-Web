@@ -1,6 +1,6 @@
 ---
 nom: Gabriel Dugny
-poste: Secrétaire
+poste: Vice-Président
 
 messenger: gabriel.dugny
 mail: gabriel.dugny@ye-mistikrik.fr
@@ -8,5 +8,5 @@ linkedin: gabriel-dugny
 
 img: gabriel.dugny.jpg
 
-order: 3
+order: 5
 ---

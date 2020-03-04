@@ -1,11 +1,11 @@
 ---
 nom: Inès Mhedden
-poste: Présidente
+poste: Secrétaire
 
 mail: ine.mhedden@ye-mistikrik.fr
 linkedin: ines-mhedden-a1249a159
 
 img: ines.mhedden.jpg
 
-order: 1
+order: 3
 ---
